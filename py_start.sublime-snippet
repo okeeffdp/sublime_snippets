@@ -6,11 +6,16 @@ ${1:Documentation}
 
 @author: ${2:Author Name}
 """
+# %matplotlib inline
 
 # *********************** #
 # IMPORTS                 #
 # *********************** #
+# Built-ins
+
+# Extras
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # *********************** #
 # PREAMBLE                #
@@ -20,6 +25,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', 10)
 pd.set_option('display.width', None)
 
+# Plotting settings
+plt.style.use('ggplot')
 # *********************** #
 # FUNCTIONS               #
 # *********************** #
